@@ -1,0 +1,270 @@
+body {
+    background: #000000;
+    color: #999;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* start all section */
+#home,
+#home .fp-slide,
+#home .fp-tableCell,
+
+#work,
+#work .fp-slide,
+#work .fp-tableCell,
+
+#about,
+#about .fp-slide,
+#about .fp-tableCell,
+
+#contact,
+#contact .fp-slide,
+#contact .fp-tableCell,
+
+#portfolio,
+#portfolio .fp-slide,
+#portfolio .fp-tableCell,
+
+footer,
+footer .fp-slide,
+footer .fp-tableCell {
+    height: auto !important;
+}
+
+/* end all section */
+
+/* start all heading */
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* end all heading */
+
+/* start all section */
+#work,
+#about,
+#portfolio,
+#contact {
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+/* end all section */
+
+/* start simpletextrotator */
+.rotating {
+    display: inline-block;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: rotateX(0) rotateY(0) rotateZ(0);
+    -moz-transform: rotateX(0) rotateY(0) rotateZ(0);
+    -ms-transform: rotateX(0) rotateY(0) rotateZ(0);
+    -o-transform: rotateX(0) rotateY(0) rotateZ(0);
+    transform: rotateX(0) rotateY(0) rotateZ(0);
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transform-origin-x: 50%;
+}
+
+.rotating.flip {
+    position: relative;
+}
+
+.rotating .front,
+.rotating .back {
+    left: 0;
+    top: 0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.rotating .front {
+    position: absolute;
+    display: inline-block;
+    -webkit-transform: translate3d(0, 0, 1px);
+    -moz-transform: translate3d(0, 0, 1px);
+    -ms-transform: translate3d(0, 0, 1px);
+    -o-transform: translate3d(0, 0, 1px);
+    transform: translate3d(0, 0, 1px);
+}
+
+.rotating.flip .front {
+    z-index: 1;
+}
+
+.rotating .back {
+    display: block;
+    opacity: 0;
+}
+
+.rotating.spin {
+    -webkit-transform: rotate(360deg) scale(0);
+    -moz-transform: rotate(360deg) scale(0);
+    -ms-transform: rotate(360deg) scale(0);
+    -o-transform: rotate(360deg) scale(0);
+    transform: rotate(360deg) scale(0);
+}
+
+.rotating.flip .back {
+    z-index: 2;
+    display: block;
+    opacity: 1;
+
+    -webkit-transform: rotateY(180deg) translate3d(0, 0, 0);
+    -moz-transform: rotateY(180deg) translate3d(0, 0, 0);
+    -ms-transform: rotateY(180deg) translate3d(0, 0, 0);
+    -o-transform: rotateY(180deg) translate3d(0, 0, 0);
+    transform: rotateY(180deg) translate3d(0, 0, 0);
+}
+
+.rotating.flip.up .back {
+    -webkit-transform: rotateX(180deg) translate3d(0, 0, 0);
+    -moz-transform: rotateX(180deg) translate3d(0, 0, 0);
+    -ms-transform: rotateX(180deg) translate3d(0, 0, 0);
+    -o-transform: rotateX(180deg) translate3d(0, 0, 0);
+    transform: rotateX(180deg) translate3d(0, 0, 0);
+}
+
+.rotating.flip.cube .front {
+    -webkit-transform: translate3d(0, 0, 100px) scale(0.9, 0.9);
+    -moz-transform: translate3d(0, 0, 100px) scale(0.85, 0.85);
+    -ms-transform: translate3d(0, 0, 100px) scale(0.85, 0.85);
+    -o-transform: translate3d(0, 0, 100px) scale(0.85, 0.85);
+    transform: translate3d(0, 0, 100px) scale(0.85, 0.85);
+}
+
+.rotating.flip.cube .back {
+    -webkit-transform: rotateY(180deg) translate3d(0, 0, 100px) scale(0.9, 0.9);
+    -moz-transform: rotateY(180deg) translate3d(0, 0, 100px) scale(0.85, 0.85);
+    -ms-transform: rotateY(180deg) translate3d(0, 0, 100px) scale(0.85, 0.85);
+    -o-transform: rotateY(180deg) translate3d(0, 0, 100px) scale(0.85, 0.85);
+    transform: rotateY(180deg) translate3d(0, 0, 100px) scale(0.85, 0.85);
+}
+
+.rotating.flip.cube.up .back {
+    -webkit-transform: rotateX(180deg) translate3d(0, 0, 100px) scale(0.9, 0.9);
+    -moz-transform: rotateX(180deg) translate3d(0, 0, 100px) scale(0.85, 0.85);
+    -ms-transform: rotateX(180deg) translate3d(0, 0, 100px) scale(0.85, 0.85);
+    -o-transform: rotateX(180deg) translate3d(0, 0, 100px) scale(0.85, 0.85);
+    transform: rotateX(180deg) translate3d(0, 0, 100px) scale(0.85, 0.85);
+}
+
+/* end simpletextrotator */
+
+#home {
+    background: url('../images/home-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 120px;
+    padding-bottom: 140px;
+    text-align: center;
+}
+
+#home h1 {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    display: inline-block;
+    letter-spacing: 6px;
+    padding: 25px 35px;
+    margin: 30px 0;
+}
+
+#home h2 {
+    padding-bottom: 10px;
+}
+
+#home .btncontainer {
+    position: relative;
+}
+
+#home .btn {
+    background: transparent;
+    border: 2px solid #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    width: 180px;
+    height: 60px;
+    margin-top: 40px;
+    padding-top: 18px;
+    transition: all 0.4s ease-in-out;
+}
+
+#home .btn:hover {
+    color: #ffffff;
+    border-color: transparent;
+}
+
+#education {
+    background-color: #1a1a1a;
+}
+
+#education h2 {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#education .media-heading {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    transition: all 0.4s ease-in-out;
+    vertical-align: middle;
+}
+
+#education p {
+    font-size: 18px;
+}
+
+#education a {
+    color: #ffffff;
+    transition: all 0.4s ease-in-out;
+}
+
+#education .list-header {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#education li {
+    margin-top: 20px;
+}
+
+#education #shs:hover {
+    color: #a3b14e;
+}
+
+#education #bh:hover {
+    color: #2b4785;
+}
+
+#education #harv:hover {
+    color: #982b35;
+}
+
+#education .media-heading:hover {
+    border-color: transparent;
+}
