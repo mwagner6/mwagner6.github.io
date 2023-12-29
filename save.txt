@@ -1,0 +1,15 @@
+I have worked at BWH, and MGH after the lab moved for three years. In this time, I co-authored a review paper soon to be published,
+and have mainly worked on a project linking neurodegeneration with the disturbance of rest-activity patterns. The analytics were mostly 
+performed using MATLAB and JMP, with some validation done using python. I presented the abstract at the SLEEP 2022 conference in Charlotte, NC, 
+and am currently working on preparing the paper for publication.
+
+
+At Cellino, I worked on a team of interns that created a precision fluidics system for controlled liquid flow, and an imaging setup
+that could capture features of liquid flow from imaging data alone. This imaging setup used python and some image processing libraries 
+including opencv and scikit-image, as well as some algorithms I developed personally. Finally, we integrated the systems to make a one-click 
+setup that can flow liquid through a cell chamber in order to quantify a number of measures, most importantly the efficiency of liquid replacement.
+
+In the Harvard Data Analytics Group, I have worked since coming to college as a case team analyst. I have used geographical and time-scale data
+analytics techniques in order to draw insight into event sales data. We also created a number of machine-learning models that predicted event attendance
+after ticket sales, and intuitive and interavtive maps to display geographic data. The process culminated in a presentation to my team's clients, in which we 
+provided our insights, as well as a platform with which they could easily filter data and generate interactive maps that display regional sales.

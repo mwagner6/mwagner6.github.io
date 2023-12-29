@@ -11,13 +11,17 @@ body {
 #home .fp-slide,
 #home .fp-tableCell,
 
-#work,
-#work .fp-slide,
-#work .fp-tableCell,
+#experience,
+#experience .fp-slide,
+#experience .fp-tableCell,
 
-#about,
-#about .fp-slide,
-#about .fp-tableCell,
+#education,
+#education .fp-slide,
+#education .fp-tableCell,
+
+#skills,
+#skills .fp-slide,
+#skills .fp-tableCell,
 
 #contact,
 #contact .fp-slide,
@@ -30,7 +34,7 @@ body {
 footer,
 footer .fp-slide,
 footer .fp-tableCell {
-    height: auto !important;
+    height: 100vh !important;
 }
 
 /* end all section */
@@ -48,13 +52,6 @@ h5 {
 /* end all heading */
 
 /* start all section */
-#work,
-#about,
-#portfolio,
-#contact {
-    padding-top: 100px;
-    padding-bottom: 120px;
-}
 
 /* end all section */
 
@@ -170,6 +167,8 @@ h5 {
 .backlayer {
     position: absolute;
     z-index: 2;
+    height: 100vh;
+    width: 100vw;
 }
 
 .frontlayer {
@@ -184,9 +183,9 @@ h5 {
 }
 
 #home h1 {
-    border: 2px solid #ffffff;
     color: #ffffff;
     display: inline-block;
+    font-size: 60px;
     letter-spacing: 6px;
     padding: 25px 35px;
     margin: 100px 0;
@@ -197,8 +196,63 @@ h5 {
     padding-bottom: 50px;
 }
 
+
+#portfolio {
+    background: #1a1a1a;
+    text-align: center;
+}
+
+#portfolio h2 {
+    padding-bottom: 30px;
+}
+
+#portfolio .portfolio-thumb {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#portfolio .portfolio-thumb .portfolio-overlay {
+    background: #1a1a1a;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+}
+
+#portfolio .portfolio-thumb:hover .portfolio-overlay {
+    cursor: pointer;
+    opacity: 0.9;
+    transform: scale(0.9);
+}
+
+#portfolio .portfolio-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 #education {
-    background-color: #1a1a1a;
+    background-color: #0c0c0c;
+}
+
+.mobile {display:none;}
+.desktop {display:display;}
+
+@media (max-width : 1024px) {
+    .mobile {display:block;}
+    .desktop {display:none;}
+    li {margin-top: 0px !important;}
+    h2 {padding-top: 10px !important; padding-bottom: 5px !important;}
+    .media-heading {margin-top: 20px !important; font-size: 20px !important; margin-bottom: 20px !important;}
 }
 
 #education h2 {
