@@ -232,6 +232,7 @@ h5 {
 #portfolio .mobile-port {
     width: 60vw;
     margin-left: 23vw;
+    max-height: 15vh;
 }
 
 #portfolio .portfolio-thumb .portfolio-overlay {
