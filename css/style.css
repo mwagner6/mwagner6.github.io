@@ -197,12 +197,29 @@ h5 {
 }
 
 
+.mobile {display:none;}
+.desktop {display:display;}
+
+@media (max-width : 1024px) {
+    .mobile {display:block;}
+    .desktop {display:none !important;}
+    li {margin-top: 0px !important;}
+    h2 {padding-top: 10px !important; padding-bottom: 5px !important;}
+    .media-heading {margin-top: 20px !important; font-size: 20px !important; margin-bottom: 20px !important;}
+    .portfolio-thumb {margin-bottom: 10px !important}
+}
+
 #portfolio {
     background: #1a1a1a;
     text-align: center;
 }
 
+#portfolio .row {
+    align-items: center;
+}
+
 #portfolio h2 {
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 
@@ -210,6 +227,11 @@ h5 {
     overflow: hidden;
     position: relative;
     margin-bottom: 30px;
+}
+
+#portfolio .mobile-port {
+    width: 90vw;
+    padding-left: 20vw;
 }
 
 #portfolio .portfolio-thumb .portfolio-overlay {
@@ -242,17 +264,6 @@ h5 {
 
 #education {
     background-color: #0c0c0c;
-}
-
-.mobile {display:none;}
-.desktop {display:display;}
-
-@media (max-width : 1024px) {
-    .mobile {display:block;}
-    .desktop {display:none;}
-    li {margin-top: 0px !important;}
-    h2 {padding-top: 10px !important; padding-bottom: 5px !important;}
-    .media-heading {margin-top: 20px !important; font-size: 20px !important; margin-bottom: 20px !important;}
 }
 
 #education h2 {
