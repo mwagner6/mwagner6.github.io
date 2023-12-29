@@ -206,8 +206,9 @@ h5 {
     li {margin-top: 0px !important;}
     h2 {padding-top: 10px !important; padding-bottom: 5px !important;}
     .media-heading {margin-top: 20px !important; font-size: 20px !important; margin-bottom: 20px !important;}
-    .portfolio-thumb {margin-bottom: 10px !important}
-    #portfolio .row {margin-bottom: 8vh !important}
+    .portfolio-thumb {margin-bottom: 10px !important;}
+    #portfolio .row {margin-bottom: 8vh !important;}
+    #skills .text-top {padding-top: 20px !important;}
 }
 
 #portfolio {
@@ -262,7 +263,49 @@ h5 {
     align-items: center;
 }
 
+#skills h2 {
+    padding-top: 50px;
+}
 
+#skills h4 {
+    padding: 15px 0;
+    color: #c0c0c0;
+}
+
+#skills p {
+    padding: 15px 0;
+}
+
+#skills .progress {
+    border-radius: 4px;
+    background: #fff;
+    height: 10px;
+}
+
+#skills .text-top {
+    padding-top: 200px;
+}
+
+#skills span {
+    padding-top: 30px;
+}
+
+#skills span {
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    padding-bottom: 6px;
+}
+
+#skills small {
+    font-weight: bold;
+    float: right;
+}
+
+#skills img {
+    width: 20vw;
+    margin-left: 3vw;
+}
 
 #education {
     background-color: #0c0c0c;
