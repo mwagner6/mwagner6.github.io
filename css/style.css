@@ -308,7 +308,7 @@ h5 {
 }
 
 #education {
-    background-color: #0c0c0c;
+    background-color: #1a1a1a;
 }
 
 #education h2 {
@@ -389,6 +389,12 @@ h5 {
     text-align: center;
     margin-right: 20px;
     margin-top: 20px;
+    transition: all 0.4s ease-in-out;
+}
+
+#contact .contact-line:hover {
+    background: #fff;
+    color: #000;
 }
 
 #contact a {
