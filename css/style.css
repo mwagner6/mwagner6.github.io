@@ -263,6 +263,22 @@ h5 {
     align-items: center;
 }
 
+#portfolio a {
+    border: 2px solid white;
+    background: transparent;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: #fff;
+    transition: all 0.4s ease-in-out;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+#portfolio a:hover {
+    background: #fff;
+    color: #000;
+}
+
 #skills h2 {
     padding-top: 50px;
 }
