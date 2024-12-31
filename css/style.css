@@ -207,42 +207,83 @@ h5 {
 .mobile {display:none;}
 .desktop {display:display;}
 
-@media (max-width : 1024px) {
+@media (max-aspect-ratio: 1/1) {
     .mobile {display:block;}
     .desktop {display:none !important;}
     li {margin-top: 0px !important;}
     h2 {padding-top: 10px !important; padding-bottom: 5px !important;}
     .media-heading {margin-top: 20px !important; font-size: 20px !important; margin-bottom: 20px !important;}
     .portfolio-thumb {margin-bottom: 10px !important;}
-    #portfolio .row {margin-bottom: 8vh !important;}
+    #portfolio .row {padding-bottom: 8vh !important; padding-top: 8vh !important;}
+    #portfolio h2 {margin-bottom: 0px; padding-bottom: 0px; border-bottom: 0px;}
+    #portfolio .col-xs-11 {margin-bottom: 0px; padding-bottom: 0px; border-bottom: 0px;}
     #skills .text-top {padding-top: 20px !important;}
-    #portfolio .portfolio-thumb {height: 20vh !important;}
+    .backlayer {height: 55vh !important;}
+    #portfolio .col-md-6{width: 90%;}
 }
 
+#particles-container {
+    position: relative;
+    width: 100%;
+    height: auto; /* Adjust dynamically */
+    overflow: hidden; /* Prevent particles from spilling over */
+    z-index: 1; /* Ensure it stays below the divider */
+}
+
+#particle-divider {
+    position: relative;
+    width: 100%;
+    height: 1px; /* Or adjust for your desired visual boundary */
+    background: #1a1a1a; /* Same color as the Experience section background */
+    z-index: 10; /* Ensure it sits above the particles */
+}
+
+
 #portfolio {
-    background: #1a1a1a;
-    text-align: center;
+    background-color: #1a1a1a;
 }
 
 #portfolio .row {
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px; /* Ensures uniform spacing between items */
 }
 
-#portfolio h2 {
-    padding-top: 30px;
-    padding-bottom: 30px;
+#portfolio .col-md-6,
+#portfolio .col-xs-6 {
+    width: 48%; /* Ensures two items per row */
 }
 
 #portfolio .portfolio-thumb {
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 30px;
+    position: relative; /* Ensure content stays inside the box */
+    margin-bottom: 0; /* Remove bottom margins from `.portfolio-thumb` */
 }
+
+#portfolio .portfolio-overlay {
+    position: absolute; /* Ensure overlay sits on top without affecting layout */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#portfolio .portfolio-thumb img {
+    display: block; /* Removes any inline padding/margins from images */
+    width: 100%; /* Ensures images fill the container */
+    margin-bottom: 0; /* Prevent gaps below images */
+}
+
+#portfolio .row {
+    gap: 30px; /* Ensure vertical and horizontal spacing is consistent */
+}
+
+
 
 #portfolio .mobile-port {
     width: 60vw;
     margin-left: 23vw;
-    max-height: 15vh;
+    height: 15vh;
 }
 
 #portfolio .portfolio-thumb .portfolio-overlay {
@@ -269,6 +310,8 @@ h5 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #portfolio a {
@@ -297,7 +340,9 @@ h5 {
 }
 
 #skills p {
-    padding: 15px 0;
+    padding: 15px 15px;
+    margin: 15px 15px;
+    border-radius: 10px;
 }
 
 #skills .progress {
@@ -330,6 +375,20 @@ h5 {
     width: 20vw;
     margin-left: 3vw;
     padding-bottom: 100px;
+}
+
+#skills img.img-responsive {
+    max-width: 100%; /* Image width is constrained to its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Removes extra space below image */
+    margin: 0 auto; /* Center-align image */
+}
+
+/* Optionally, you can ensure the column containing the image doesn’t grow too large */
+#skills .col-md-6 {
+    max-width: 100%; /* Prevents the column from exceeding the container width */
+    padding-left: 0; /* Removes left padding */
+    padding-right: 0; /* Removes right padding */
 }
 
 #education {

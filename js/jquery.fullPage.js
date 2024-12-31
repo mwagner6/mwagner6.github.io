@@ -94,7 +94,7 @@
             //scrolling
             css3: true,
             scrollingSpeed: 700,
-            autoScrolling: true,
+            autoScrolling: false,
             fitToSection: true,
             easing: 'easeInOutCubic',
             easingcss3: 'ease',
@@ -166,10 +166,10 @@
                     'touch-action': 'none'
                 });
 
-                if(element.length){
+                /*if(element.length){
                     //moving the container up
                     silentScroll(element.position().top);
-                }
+                }*/
 
             }else{
                 $htmlBody.css({
@@ -185,12 +185,12 @@
                     'touch-action': ''
                 });
 
-                silentScroll(0);
+                /*silentScroll(0);
 
                 //scrolling the page to the section with no animation
                 if (element.length) {
                     $htmlBody.scrollTop(element.position().top);
-                }
+                }*/
             }
 
         };
@@ -356,7 +356,7 @@
             //isn't it the first section?
             if(activeSection.index(SECTION_SEL)){
                 //adjusting the position for the current section
-                scrollPage(activeSection);
+                //scrollPage(activeSection);
             }
 
             isResizing = false;
@@ -757,6 +757,7 @@
                 scrollSection = FP.moveSectionUp;
             }
 
+            
             if(scrollable.length > 0 ){
                 //is the scrollbar at the start/end of the scroll?
                 if(isScrolled(check, scrollable)){
@@ -1077,6 +1078,7 @@
         */
         function performMovement(v){
             // using CSS3 translate functionality
+            /*
             if (options.css3 && options.autoScrolling && !options.scrollBar) {
 
                 var translate3d = 'translate3d(0px, -' + v.dtop + 'px, 0px)';
@@ -1097,6 +1099,7 @@
                     afterSectionLoads(v);
                 });
             }
+            */
         }
 
         /**
