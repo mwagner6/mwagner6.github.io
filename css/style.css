@@ -294,6 +294,8 @@ h5 {
     #portfolio .row.justify-content-center {margin-bottom: 10px;}
     #portfolio .row.justify-content-center:last-child {margin-bottom: 0;}
     #portfolio .mobile-port {margin-bottom: 0; width: 100%;}
+    .backlayer {pointer-events: none;}
+    #particles-js {pointer-events: none;}
 }
 
 #particles-container {
